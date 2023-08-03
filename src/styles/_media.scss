@@ -1,0 +1,57 @@
+@media (max-width: 1080px) {
+    body {
+        height: fit-content;
+    }
+
+    #root {
+        height: fit-content;
+        background-image: url('../assets/bg-mobile.svg');
+    }
+
+    .site {
+        gap: 64px;
+        height: auto;
+        padding: 32px;
+
+        .header {
+            img {
+                width: 160px;
+            }
+        }
+
+        .main {
+            flex-direction: column;
+            align-items: center;
+            max-width: 560px;
+
+            .illustration {
+                width: 100%;
+            }
+
+            .content {
+                max-width: none;
+                width: 100%;
+                align-items: center;
+
+                .title {
+                    text-align: center;
+                    font-size: 1.6rem;
+                }
+
+                .description {
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+
+                .register {
+                    width: 80%;
+                    max-width: 300px;
+                }
+            }
+        }
+
+        .socials {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+// Colors
+// Primary
+$violet: hsl(257, 40%, 49%);
+$softMagenta: hsl(300, 69%, 71%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    color: white;
+}

@@ -1,0 +1,98 @@
+@import 'config.scss';
+
+body {
+    height: 100vh;
+    background: $violet;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site {
+    padding: 32px 64px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .main {
+        display: flex;
+        gap: 32px;
+
+        .illustration {
+            width: 60%;
+        }
+
+        .content {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 460px;
+            padding: 32px 0;
+
+            .title {
+                font-family: 'Poppins';
+                font-size: 2.5rem;
+            }
+
+            .description {
+                line-height: 1.6rem;
+            }
+
+            .register {
+                border: none;
+                background: white;
+                color: $violet;
+                padding: 16px;
+                border-radius: 32px;
+                width: 200px;
+                font-size: 1rem;
+                font-weight: 600;
+                box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+
+                &:hover {
+                    background: $softMagenta;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+
+        .social {
+            border: 1px solid black;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            cursor: pointer;
+
+            filter: invert(100%);
+
+            &:hover {
+                filter: invert(72%) sepia(50%) saturate(1787%) hue-rotate(233deg) brightness(95%) contrast(90%);
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+@import 'media.scss';
